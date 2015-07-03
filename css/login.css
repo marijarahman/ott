@@ -1,0 +1,458 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+/* change colours to suit your needs */
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+/* change colours to suit your needs */
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* change border colour to suit your needs */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+/*Box Sizing Micro hack */
+
+/*
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+*/
+
+
+/*=====================================*\
+    #GENERAL
+\*=====================================*/
+
+
+body{
+    font-size: 16px;/*100%*/
+     font-family: 'Lytigapro', sans-serif;
+/*     background-image: url(images/lines.png);  */
+}
+
+.header_wrapper {
+    width:71.063em;
+    height: 5.438em;;
+    margin: 0 auto;
+   
+}
+.wrapper {
+     width:71.063em;
+     margin: 0 auto;
+}
+
+@font-face {
+font-family: 'LytigaPro';
+   src: url('font/LYTIGAPRO-BLACK.OTF'), 
+       url('font/lytigapro-black-webfont.eot'), 
+       url('font/lytigapro-black-webfont.wof'), 
+       url('font/lytigapro-black-webfont.wof2');
+}
+
+
+/*=====================================*\
+    #HEADER
+\*=====================================*/
+
+.main_header {
+    background-color: #041421;
+    height: 5.438em;
+    margin-left: 8px;
+    width: 100%;
+     overflow: hidden;
+}
+
+    .logo {
+/*        width: 16.125em;*/
+/*        height: 2.375em;*/
+    }
+        .logo img {
+            width: 3.813em;
+            height: 3.5em;
+            margin: 1em 1.25em 1em 0;
+            float: left;
+        
+        }
+        .logo h1 {
+            color: #ffffff;
+/*            font-size: 1.732em;*/
+            width: 6.125em;
+            height: 2.375em;
+            margin: 1.563em 0 1.563em 0;
+            padding: 0;
+            float: left;        
+        }
+            .logo span {
+                color: #35e6af;
+
+            }
+
+    .main_nav {
+        width: 37.05em;
+/*        width: 32.375em;*/
+        padding: 4.125em 0 0 10em;
+        float: left;
+    }
+            .main_nav li {
+                display: inline-block;
+                margin-left: 2.25em;
+            }
+            .main_nav li:first-child {
+                 margin: 0;
+            }
+                .main_nav a {
+                   text-decoration: none;
+                   color: #ffffff;
+                   font-size: .75em;
+                }
+    .user_header {
+        width: 7.313em;
+        margin: 3.25em 0 0 4.5em;
+        float: left;
+        color: #acacac;
+        position: relative;
+        border-bottom: 8px solid #522b95;
+        padding: 0 0 .25em 0;
+    }
+        .user_header p {
+            font-size: 11px;      
+        }
+            .user_header span {
+                display: block;
+                font-weight: 700;
+            }
+
+        .user_header img {   
+            width: 10px;
+            height: 5px;
+            top:.75em;
+            left:105px;
+            position: absolute;       
+        }
+       
+               
+                    
+                
+
+/*=====================================*\
+    #MAIN
+\*=====================================*/
+
+.main-content {
+    height: 100%;
+    background-color: #0a2131;
+
+}
+
+
+
+
+    .main_section {
+        background-color: #0a2131;
+        width: 1540px;
+        position: relative;
+        float: left;
+        left: 274px;
+
+
+    }
+        .cliparts {
+           display: inline-block;
+           position: relative;
+           z-index : 1;
+            
+        }
+            .cliparts img { 
+                 display: block;
+            }
+            .clip_img {
+                position: absolute; 
+                z-index: 1;                
+            }
+
+            .cimg1 {
+                bottom: 665px;
+                right: 852px;
+                
+            }
+            .cimg2 {
+                bottom: 665px;
+                right: 601px;
+            }
+            .cimg3 {
+                bottom: 665px;
+                right: 334px;
+            }
+            .cimg4 {
+                bottom: 388px;
+                right: 1065px;
+            }
+            .cimg5 {
+                bottom: 388px;
+                right: 795px;
+            }
+            .cimg6 {
+                bottom: 388px;
+                right: 536px;
+            }
+            .cimg7 {
+                bottom: 116px;
+                 right: 1269px;
+            }
+            .cimg8 {
+                bottom: 162px;
+                left: 472px;
+            }
+            .cimg9 {
+                 bottom: 162px;
+                 left: 731px;
+            }
+                        
+            
+            
+            
+                
+        
+       
+        .main_section img {
+          z-index: 1;
+          position: relative;
+        }
+        .main_aside {
+            background-color: #35e6af;
+            float: right;
+            width: 630px;
+            height: 957px;
+            position: absolute;
+            top: 87px;
+            right: 0;
+        }
+
+/* styles for table like elements */
+
+
+.table-row figcaption {
+    color: #a7adb2;
+    font: 400 10px LytigaPro; 
+    background-color: #ffffff;
+}
+
+.show-time { float: right; }
+
+
+
+
+/*=====================================*\
+    #FOOTER
+\*=====================================*/
+
+.footer-heading, .company-info-footer {
+    color: #ffffff;
+    font: 300 0.833333333em LytigaPro;    
+}
+
+.footer-heading { 
+    text-transform: uppercase;
+    padding: .833333333em 0;
+}
+
+.content-footer {
+    background-color: rgba(4, 20, 33, 0.9);
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.company-info-footer {
+    list-style: none;
+    padding: 
+}
+.quick-links-item {
+    width: 32%;
+    display: inline-block;
+    
+}
+.quick-link-item-footer { list-style: none; }
+
+.item-footer { 
+    width: 33%;
+    display: inline-block;
+}
+
+/*=====================================*\
+    #LOGIN
+\*=====================================*/
+
+.rr-left_login {
+    background:url(images/Group-11-copy.png);
+}
