@@ -1,5 +1,6 @@
 /* Basic jQuery Slider essential styles */
 
+/*
 ul.bjqs {
     position: relative;
     list-style: none;
@@ -32,12 +33,14 @@ ul.bjqs-controls.v-centered li.bjqs-next a {
 ul.bjqs-controls.v-centered li.bjqs-prev a {
     left: 0;
 }
+*/
 
 ol.bjqs-markers {
     list-style: none;
     padding: 0;
     margin: 0;
-    width: 100%;
+    width: 200px;
+    margin: -60px auto 0;
 }
 
 ol.bjqs-markers.h-centered {
@@ -56,10 +59,10 @@ ol.bjqs-markers li a {
     display: block;
     width: 100%;
     margin: 0;
-    padding: 2%;
+    padding: 1em 0;
     position: absolute;
     bottom: 0;
-    background: rgba(4, 20, 33, .3);
+    background-image: url(images/Rectangle-1-copy-50.png);
 }
 
 p.caption {
@@ -68,6 +71,10 @@ p.caption {
     color: #35e6af;
     font: 700 1em LytigaPro;
     text-transform: uppercase;
-    padding: 1.25em;
+    padding: 1.25em 0;
     
+}
+
+.active-marker {
+    color: rgb(53, 230, 175);
 }

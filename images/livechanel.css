@@ -1,0 +1,803 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+img {
+    max-width: 100%;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+/* change colours to suit your needs */
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+/* change colours to suit your needs */
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* change border colour to suit your needs */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+/* Box Sizing Micro hack */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+/*=====================================*\
+
+    #GENERAL
+
+\*=====================================*/
+
+body {
+    font-size: 16px;
+    /*100%*/
+    
+    font-family: 'Lytigapro', sans-serif;
+    background-image: url(images/lines.png);
+    background-repeat: repeat-y;
+}
+
+.header_wrapper {
+    width: 71.063em;
+    height: 5.438em;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 71.063rem;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: 'LytigaPro';
+    src: url('font/LYTIGAPRO-BLACK.OTF'), url('font/lytigapro-black-webfont.eot'), url('font/lytigapro-black-webfont.wof'), url('font/lytigapro-black-webfont.wof2');
+}
+
+.float-left {
+    float: left;
+}
+
+.overflow-item {
+    overflow: auto;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+
+
+
+/*=====================================*\
+
+    #HEADER
+
+\*=====================================*/
+
+.main_header {
+    background-color: #041421;
+    height: 5.438em;
+    margin-left: 8px;
+    /*    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+*/
+}
+
+.logo {
+    /*        width: 16.125em;*/
+    /*        height: 2.375em;*/
+}
+
+.logo img {
+    width: 3.813em;
+    height: 3.5em;
+    margin: 1em 1.25em 1em 0;
+    float: left;
+}
+
+.logo h1 {
+    color: #ffffff;
+    /*            font-size: 1.732em;*/
+    
+    width: 6.125em;
+    height: 2.375em;
+    margin: 1.563em 0 1.563em 0;
+    padding: 0;
+    float: left;
+}
+
+.logo span {
+    color: #35e6af;
+}
+
+.main_nav {
+    padding: 4.125em 0 0 10em;
+    float: right;
+}
+
+.main_nav li {
+    display: inline-block;
+    margin-left: 2.25em;
+}
+
+.main_nav li:first-child {
+    margin: 0;
+}
+
+.main_nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: .75em;
+}
+
+.user_header {
+    width: 7.313em;
+    margin: 3.25em 0 0 4.5em;
+    float: right;
+    color: #acacac;
+    position: relative;
+    border-bottom: 8px solid #522b95;
+    padding: 0 0 .25em 0;
+}
+
+.user_header p {
+    font-size: 11px;
+}
+
+.user_header span {
+    display: block;
+    font-weight: 700;
+}
+
+.user_header img {
+    width: 10px;
+    height: 5px;
+    top: .75em;
+    left: 105px;
+    position: absolute;
+}
+/* header wrapper for search, nav and logo */
+
+.header-wrapper {
+    width: 59.0625em;
+    overflow: auto;
+    float: left;
+    border-bottom: 1px solid rgba(4, 20, 33, .5);
+}
+
+
+
+
+
+/*=====================================*\
+
+    #MAIN
+
+\*=====================================*/
+
+.main-content {
+    overflow: hidden;
+    margin-left: 8px;
+    position: relative;
+    background-color: #d0cfce;
+}
+
+
+.overlay {
+    height: 100%;
+    position: absolute;
+    right: 50%;
+    margin-right: -60.5em;
+    top: 0;
+    z-index: 3;
+    width: 24.5625em;
+}
+
+.overlay img {
+    height: 100%;
+    width: 100%;
+}
+
+.overlay--purple {
+    right: 0;
+    z-index: 1;
+    margin-right: -59.125em; /* purple line is 20px */
+    right: 50%;
+}
+/* place for slider */
+
+#banner-slide {
+    /*
+    position: relative;
+    z-index: 1;
+*/
+    
+    max-height: 43.375em;
+}
+/* search */
+
+.search-wrapper {
+    background-color: rgba(255, 255, 254, .9);
+    /*    width: 100%;*/
+    
+    padding: .5em;
+    position: relative;
+    z-index: 3;
+}
+
+.search-box {
+    /*    width: 59.0625em;*/
+    
+    overflow: auto;
+}
+
+.search-input {
+    outline: 0;
+    border: none;
+    background-color: rgba(255, 255, 254, 1);
+    width: 14.5em;
+    color: #b3b5b6;
+    font: italic .75em 'LytigaPro';
+    padding: 6px;
+}
+
+.search {
+    display: inline;
+    float: left;
+}
+
+.search > span.holder {
+    position: absolute;
+    margin: .3125em .5em;
+    color: #b3b5b6;
+    cursor: auto;
+    font: italic .75rem LytigaPro;
+    z-index: 1;
+}
+
+.search > span.holder > span.dark-grey {
+    color: #041421;
+    font: 400 .75rem LytigaPro;
+}
+
+
+.small-heading {
+    color: #041421;
+    font: 400 .75em 'LytigaPro';
+    float: right;
+    margin: .3125em .5em;
+    text-transform: uppercase;
+}
+/* bold in search */
+
+.search-bold {
+    color: #000;
+    font: normal .75em LytigaPro;
+}
+/* Promotions */
+/* heading in promotion section */
+
+.medium-heading {
+    color: #04131f;
+    font: bold 1em 'LytigaPro';
+    text-transform: uppercase;
+}
+
+/*=====================================*\
+
+    #FOOTER
+
+\*=====================================*/
+
+.content-footer {
+    background-color: rgba(4, 18, 30, .9);
+    min-height: 6.875em;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-item-first {
+    padding: 1.25em 4.0625em 1.25em 0;
+}
+
+.footer-item-second {
+    padding: 1.25em 0 1.25em 1.9375em;
+}
+
+.footer-item--larger {
+    padding: 1.25rem 2.625rem 1.25rem 2.875rem;
+}
+/* rem because font is set to 10px */
+
+.footer-heading {
+    color: #ffffff;
+    font: 700 12px LytigaPro;
+    text-transform: uppercase;
+    padding-bottom: 1.0625em;
+}
+
+.footer-list {
+    color: #ffffff;
+    font: 300 .625em LytigaPro;
+}
+
+.footer-list {
+    list-style: none;
+}
+
+.first-list-footer-sub {
+    padding-right: 4.875em;
+}
+
+.second-list-footer-sub {
+    padding-right: 3.25em;
+}
+
+.third-list-footer-sub {
+    padding-right: 2.5625em;
+}
+
+.social-share {
+    padding-bottom: 1.1875em;
+}
+
+.social-share li {
+    display: inline-block;
+    padding-right: 1.3125em;
+}
+
+.footer-slanted-line {
+    padding-top: 1.25em;
+}
+/* angled line */
+
+.slanted-line {
+    width: .0625em;
+    -ms-transform: rotate(19deg);
+    /* IE 9 */
+    
+    -webkit-transform: rotate(19deg);
+    /* Chrome, Safari, Opera */
+    
+    transform: rotate(19deg);
+    height: 4.4375em;
+    background-color: #ffffff;
+}
+
+
+
+
+
+/*=====================================*\
+
+    #COPYRIGHT
+
+\*=====================================*/
+
+.copyright {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #030e1a;
+}
+
+.copyright span {
+    font: 400 .625em LytigaPro;
+    color: #35e6af;
+}
+
+.copyright-wrapper {
+    padding: .4375em 0;
+}
+
+.copyright-list {
+    list-style: none;
+    float: right;
+}
+
+.copyright-list li {
+    display: inline;
+}
+
+.copyright-list li a {
+    text-decoration: none;
+    color: #ffffff;
+    font: 400 .75em LytigaPro;
+}
+
+
+/* slider */
+
+p.caption {
+    display: inline;
+    float: right;
+    color: #35e6af;
+    font: 700 1em LytigaPro;
+    text-transform: uppercase;
+    padding: 2.25em 0;
+}
+
+.caption-image { 
+    padding: 1em 0;
+    width: auto;
+}
+
+.slide-image {
+    height: 100%;
+    width: 100%;    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: relative;
+    background-image: url(../images/main.png);
+}
+
+.second { background-image: url(../images/photo3.jpg); }
+.third { background-image: url(../images/photo5.jpg); }
+
+
+/*=====================================*\
+
+    #CUSTOM FLEX SLIDER
+
+\*=====================================*/
+
+
+.flex-container a:hover,
+.flex-slider a:hover,
+.flex-container a:focus,
+.flex-slider a:focus {
+  outline: none;
+}
+.slides,
+.slides > li,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+/*
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+*/
+.flexslider .slides:after {
+  content: "\0020";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+html[xmlns] .flexslider .slides {
+  display: block;
+}
+* html .flexslider .slides {
+  height: 1%;
+}
+.no-js .flexslider .slides > li:first-child {
+  display: block;
+}
+
+.flexslider .slides {
+  zoom: 1;
+}
+
+.flexslider .slides img {
+  height: 100%;
+}
+.flex-viewport {
+  max-height: 125em;
+  height: 67.5em;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.carousel li {
+  margin-right: .3125em;
+}
+.flex-direction-nav {
+  *height: 0;
+}
+
+/* flex slider dot navigation */
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: 1.8125em;
+  text-align: center;
+  z-index: 2;
+}
+.flex-control-nav li {
+  margin: 0 .375em;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.flex-control-paging li a {
+  padding: .3125em .625em;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 10px;
+  }
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 10px;
+  }
+}
+
+
+
+
+/*=====================================*\
+
+    #LOGIN
+
+\*=====================================*/
+
+.rr-left_login {
+    background: url(images/Group-11-copy.png);
+}
+
+
+
+
+
+/*=====================================*\
+
+    #LIVE CHANNEL
+
+\*=====================================*/
+
+/*ASIDE*/
+.aside { 
+    width: 262px;
+    height: 643px;
+    background-color: #fff;
+    margin-bottom: 57px;
+}
+    .aside h3 {
+        font-family: 'LytigaPro';
+        color: #888888;
+        font-size:16px;
+        padding: 7px 0px;
+    }
+
+.channel-page-content { 
+    width: 846px;
+    height: 642px;
+}
+
+    .list_item {
+        width: 254px;
+        height: 59px;
+        margin-left: 3px;
+        border-bottom: 1px solid #edecea;
+    }
+/*
+    .list_item:hover {
+        opacity: 0.5;
+        
+    }
+*/
+    .list_item:hover img{
+        background-color: green;
+        color: green;
+    }
+    
+    .list_item:first-child {
+        border-top: 1px solid #edecea;
+    }
+   
+        .list_item a {
+
+        }
+            .list_item img {
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                float: left;
+                margin: 18px 25px;
+                fill: black;
+            }
+            .heading {
+                color: #888888;
+                display: inline-block;
+                float: left;
+                font-family: 'LytigaPro';
+                font-size: 14px;
+                padding: 22px 0px;
+            }

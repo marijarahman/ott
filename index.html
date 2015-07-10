@@ -2,42 +2,54 @@
 <html lang="en">
 
 <head>
-    <title></title>
+    <title>OTT</title>
 
 
-    <link rel="icon" href="images/Vector-Smart-Object.png" type="image/gif">
-
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="bjqs.css">
+    <link rel="icon" href="images/logo.png" type="image/gif">
+    
+    <link rel="stylesheet" href="css/marija.css">
 
     <!-- some pretty fonts for this demo page - not required for the slider -->
     <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300' rel='stylesheet' type='text/css'>
 
     <!-- demo.css contains additional styles used to set up this demo page - not required for the slider -->
-    <link rel="stylesheet" href="demo.css">
+    <!--    <link rel="stylesheet" href="demo.css">-->
 
     <!-- load jQuery and the plugin -->
+    <!--
     <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script src="js/bjqs-1.3.min.js"></script>
-    <script src="js/bjqs-1.3.js"></script>
+    <script src="js/bjqs-1.3-custom.js"></script>
+-->
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        $(window).load(function () {
+            $('.flexslider').flexslider();
+        });
+    </script>
+    <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 
 </head>
 
 <body>
-
+    <!-- HEADER -->
     <header class="main_header">
         <div class="wrapper overflow-item">
+            <!-- wrapper for logo, nav and search -->
             <div class="header-wrapper">
                 <div class="logo">
-                    <img src="images/Vector-Smart-Object.png" alt="">
+                    <img src="images/logo.png" alt="">
                     <h1>PROVIDER LOGO<span>here</span></h1>
-                 </div>
+                </div>
                 <nav class="main_nav">
                     <ul>
                         <li><a href="#">EPG</a>
                         </li>
-                        <li><a href="#">LIVE CHANNELS</a>
+                        <li><a href="live-channel.html">LIVE CHANNELS</a>
                         </li>
                         <li><a href="#">VOD</a>
                         </li>
@@ -48,80 +60,94 @@
                     </ul>
                 </nav>
             </div>
-        <div class="user_header">
-            <img src="images/Vector-Smart-Object1.png" alt="">
-            <p>Welcome <span>Nikola Ristivojevic</span>
-            </p>
-        </div>
+            <!-- end wrapper -->
+            <div class="user_header">
+                <img src="images/Vector-Smart-Object1.png" alt="">
+                <p>Welcome <span>Nikola Ristivojevic</span>
+                </p>
+            </div>
         </div>
     </header>
+    <!-- END HEADER -->
     <div class="clearfix"></div>
+
+
+
+
+    <!-- CONTENT -->
     <div class="main-content">
+
+        <!-- search box -->
         <div class="search-wrapper">
             <div class="search-box wrapper">
-               <div class="header-wrapper">
-                    <input type="search" placeholder="type something here to search" class="search-input">
+                <div class="header-wrapper">
+                    <div class="search">
+                        <span class="holder"><span class="dark-grey">type </span>something here</span>
+                        <input type="search" class="search-input" />
+                    </div>
                     <h3 class="small-heading">Search</h3>
-               </div>
+                </div>
             </div>
             <div class="clearfix"></div>
         </div>
 
-        <div id="banner-slide">
+        <div class="flexslider">
 
-            <!-- start Basic Jquery Slider -->
-            <ul class="bjqs">
-                <li>
-                    <a href=""><img src="images/main.png" title="Tonight at 23:30">
-                    </a>
+            <ul class="slides">
+                <li class="slide-image">
+                    <div class="flex-caption">
+                        <div class="wrapper overflow-item">
+                            <img src="images/Vector-Smart-Object.png" alt="" class="float-left caption-image">
+                            <p class="caption">TONIGHT AT 23:30, HBO</p>
+                        </div>
+                    </div>
+
                 </li>
-                <li><img src="images/photo2.jpg" title="Automatically generated caption">
+                <li class="slide-image second">
+                    <div class="flex-caption">
+                        <div class="wrapper overflow-item">
+                            <img src="images/Vector-Smart-Object.png" alt="" class="float-left caption-image">
+                            <p class="caption">TONIGHT AT 20:30, HBO</p>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="slide-image third">
+                    <div class="flex-caption">
+                        <div class="wrapper overflow-item">
+                            <img src="images/Vector-Smart-Object.png" alt="" class="float-left caption-image">
+                            <p class="caption">TONIGHT AT 21:30, HBO</p>
+                        </div>
+                    </div>
+
                 </li>
             </ul>
         </div>
-        <!-- end Basic jQuery Slider -->
-        <script class="secret-source">
-            jQuery(document).ready(function ($) {
-                $('#banner-slide').bjqs({
-                    animtype: 'fade',
-                    height: 694,
-                    width: 1920,
-                    responsive: true,
-                });
-
-            });
-        </script>
 
 
 
-
+        <!-- PROMOTIONS -->
         <div class="promotions">
             <section class="wrapper table-like">
                 <h2 class="medium-heading">Promotions</h2>
-                <div class="table-row">
-                    <figure class="promotion-item">
-                        <img src="images/MergedLayers1.png" alt="">
+                <div class="promotions-row">
+                    <!-- promotion item -->
+                    <figure class="promotion-item"><img src="images/MergedLayers1.png" alt="">
                         <figcaption>
                             <p class="promotion-item-heading">HBO HD,</p> <span class="television-show-name">Game of Thrones (2015)</span> <span class="show-time">16:45</span>
                         </figcaption>
                     </figure>
-
-                    <figure class="promotion-item">
-                        <img src="images/MergedLayers2.png" alt="">
+                    <figure class="promotion-item"><img src="images/MergedLayers2.png" alt="">
                         <figcaption>
-                            <p class="promotion-item-heading">HBO HD,</p> <span class="television-show-name">Avatar (2013)</span> <span class="show-time">16:45</span>
+                            <p class="promotion-item-heading">HBO HD,</p><span class="television-show-name">Avatar (2013)</span> <span class="show-time">16:45</span>
                         </figcaption>
                     </figure>
-
-                    <figure class="promotion-item">
-                        <img src="images/MergedLayers3.png" alt="">
+                    <figure class="promotion-item"><img src="images/MergedLayers3.png" alt="">
                         <figcaption>
                             <p class="promotion-item-heading">HBO HD,</p> <span class="television-show-name">Hunger Games(2015)</span> <span class="show-time">16:45</span>
                         </figcaption>
                     </figure>
-
-                    <figure class="promotion-item">
-                        <img src="images/MergedLayers4.png" alt="">
+                    <figure class="promotion-item"><img src="images/MergedLayers4.png" alt="">
                         <figcaption>
                             <p class="promotion-item-heading">HBO HD,</p> <span class="television-show-name">The Avengers (2015)</span><span class="show-time">16:45</span>
                         </figcaption>
@@ -129,13 +155,18 @@
                 </div>
             </section>
         </div>
+        <!-- END PROMOTIONS -->
 
 
+
+
+        <!-- FOOTER -->
         <footer class="content-footer">
-            <div class="wrapper">
+            <div class="wrapper overflow-item">
+
+                <!-- footer item small left -->
                 <div class="footer-item-first float-left">
                     <h3 class="footer-heading">Company name</h3>
-
                     <ul class="footer-list">
                         <li>Adress: Some street name, 256 b, 564 Some City</li>
                         <li>Phone: + 381 6 111 45 25, + 381 2 556 78 52</li>
@@ -143,14 +174,17 @@
                         <li>E-mail: someadresshere@gmail.com</li>
                     </ul>
                 </div>
+
+                <!-- angled line -->
                 <div class="float-left footer-slanted-line">
                     <div class="slanted-line"></div>
                 </div>
 
+                <!-- footer item large center -->
                 <div class="footer-item--larger float-left">
-
                     <h3 class="footer-heading">Quick links</h3>
 
+                    <!-- footer item large item -->
                     <ul class="footer-list float-left first-list-footer-sub">
                         <li>Television</li>
                         <li>On demand</li>
@@ -158,6 +192,7 @@
                         <li>Settings</li>
                     </ul>
 
+                    <!-- footer item large item -->
                     <ul class="footer-list float-left second-list-footer-sub">
                         <li>Watch TV Program</li>
                         <li>Watch movies only</li>
@@ -166,6 +201,7 @@
                         <li>Search TV</li>
                     </ul>
 
+                    <!-- footer item large item -->
                     <ul class="footer-list float-left third-list-footer-sub">
                         <li>Watch TV Program</li>
                         <li>Watch movies only</li>
@@ -178,6 +214,8 @@
                 <div class="float-left footer-slanted-line">
                     <div class="slanted-line"></div>
                 </div>
+
+                <!-- footer item small right -->
                 <div class="footer-item-second float-left">
                     <h3 class="footer-heading">Find us on</h3>
                     <ul class="footer-list social-share">
@@ -200,17 +238,25 @@
                     </ul>
                 </div>
             </div>
-
+            <div class="clearfix"></div>
+            <!-- end wrapper -->
         </footer>
+        <!-- END FOOTER -->
         <div class="overlay">
             <img src="images/green2.png" alt="">
         </div>
-        <div class="overlay--purple">
+        <div class="overlay overlay--purple">
             <img src="images/purple2.png" alt="">
         </div>
     </div>
+    <!-- END CONTENT -->
+
+
+
+
+    <!-- COPYRIGHT -->
     <div class="copyright">
-        <div class="wrapper">
+        <div class="wrapper copyright-wrapper">
             <span>&copy; Copyright by OTT 2015. All right reserved &reg;</span>
             <ul class="copyright-list">
                 <li>
@@ -226,9 +272,20 @@
         </div>
     </div>
 
-
-
-
+    <script>
+        $(function () {
+            $("span.holder + input").keyup(function () {
+                if ($(this).val().length) {
+                    $(this).prev('span.holder').hide();
+                } else {
+                    $(this).prev('span.holder').show();
+                }
+            });
+            $("span.holder").click(function () {
+                $(this).next().focus();
+            });
+        });
+    </script>
 
 </body>
 
